@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import pages.ContasPage;
 
 public class ContasTest {
@@ -29,7 +28,7 @@ public class ContasTest {
 	}
 	
 	@Test
-	public void deveRetornarMensagemDeContaJaCadastrada() {
+	public void deveRetornarMensagemDeContaJaCadastrada() {		
 		this.page.clicarNoMenuContas();
 		this.page.clicarNoBotaoAdicionar();
 		this.page.setContaSicredi();
@@ -39,7 +38,7 @@ public class ContasTest {
 	}	
 	
 	@Test
-	public void deveExcluirContaSicredi() {
+	public void deveExcluirContaSicredi() {		
 		this.page.clicarNoMenuContas();
 		this.page.clicarNoMenuListar();
 		this.page.deletarConta();
@@ -48,7 +47,7 @@ public class ContasTest {
 	}
 	
 	@Test
-	public void deveNomeDaContaSerObrigatorio() {
+	public void deveNomeDaContaSerObrigatorio() {			
 		this.page.clicarNoMenuContas();
 		this.page.clicarNoBotaoAdicionar();
 		this.page.salvarConta();
@@ -57,7 +56,7 @@ public class ContasTest {
 	}
 	
 	@Test
-	public void deveAdicionarContaBancoDoBrasil() {
+	public void deveAdicionarContaBancoDoBrasil() {	
 		this.page.clicarNoMenuContas();
 		this.page.clicarNoBotaoAdicionar();
 		this.page.setContaBancoDoBrasil();
@@ -68,7 +67,7 @@ public class ContasTest {
 	
 	
 	@Test
-	public void deveAlterarContaBancoDoBrasilParaCEF() {
+	public void deveAlterarContaBancoDoBrasilParaCEF() {	
 		this.page.clicarNoMenuContas();
 		this.page.clicarNoMenuListar();
 		this.page.alterarConta();

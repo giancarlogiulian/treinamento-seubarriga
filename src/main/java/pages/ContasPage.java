@@ -4,6 +4,10 @@ import bases.LoginBase;
 
 public class ContasPage extends LoginBase {
 	
+	public ContasPage() {
+		super();
+	}
+
 	public void clicarNoMenuContas() {
 		this.getDsl().clicarByLinkText("Contas");
 	}

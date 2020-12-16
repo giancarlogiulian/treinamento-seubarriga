@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import pages.MovimentacaoPage;
 
 public class MovimentacaoTest {
@@ -19,7 +18,7 @@ public class MovimentacaoTest {
 	}
 	
 	@Test
-	public void deveRetornarMovimentacaoAdicionadaComSucesso() {
+	public void deveRetornarMovimentacaoAdicionadaComSucesso() {	
 		this.page.clicarNoBotaoCriarMovimentacao();
 		this.page.setDataMovimentacao08DeDezembroDe2020();
 		this.page.setDataPagamento08DeDezembroDe2020();

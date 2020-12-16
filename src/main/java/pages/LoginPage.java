@@ -5,6 +5,10 @@ import org.openqa.selenium.WebElement;
 import bases.LoginBase;
 
 public class LoginPage extends LoginBase {
+	
+	public LoginPage() {
+		super();
+	}
 
 	public void setSenhaIncorreta() {
 		this.getDsl().escrever("senha", "123");

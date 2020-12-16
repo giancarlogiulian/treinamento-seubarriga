@@ -1,6 +1,10 @@
 package pages;
 
 public class MovimentacaoPage extends LoginPage {
+	
+	public MovimentacaoPage() {
+		super();
+	}
 
 	public void clicarNoBotaoCriarMovimentacao() {
 		this.getDsl().clicarByLinkText("Criar Movimentação");

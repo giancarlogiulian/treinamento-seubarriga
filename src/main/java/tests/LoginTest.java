@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import pages.LoginPage;
 
 public class LoginTest {
@@ -27,7 +26,7 @@ public class LoginTest {
 	}
 	
 	@Test
-	public void deveRetornarSenhaCorreta() {
+	public void deveRetornarSenhaCorreta() {		
 		this.page.setEmailCorreto();
 		this.page.setSenhaCorreta();
 		this.page.entrar();
@@ -36,7 +35,7 @@ public class LoginTest {
 	}
 	
 	@Test
-	public void deveRetornarEmailObrigatorio() {
+	public void deveRetornarEmailObrigatorio() {		
 		this.page.setSenhaCorreta();
 		this.page.entrar();
 		
@@ -44,7 +43,7 @@ public class LoginTest {
 	}	
 	
 	@Test
-	public void deveRetornarSenhaObrigatorio() {
+	public void deveRetornarSenhaObrigatorio() {			
 		this.page.setEmailCorreto();
 		this.page.entrar();
 		
